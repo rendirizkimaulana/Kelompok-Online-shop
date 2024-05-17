@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Checkout</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="cekout.css" />
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <h1>Online Shop</h1>
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+                <div class="search-container">
+                    <form action="/search" method="get">
+                        <input type="text" placeholder="Search..." name="search">
+                        <button type="submit">Search</button>
+                    </form>
+                </div>
+                <ul class="login-signup">
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="signup.html">Signup</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Formulir Pembelian</h1>
+        <div class="product-info">
+            <h2>Nama Produk</h2>
+            <img src="assets/kaos1.jpeg" alt="Product 1">
+            <p><b>SIZE CHART OVERSIZED</b></p>
+            <p>
+                S = Panjang 70cm x Lebar 52cm x Sleeve 22 <br>
+                M = Panjang 72cm x Lebar 55cm x Sleeve 22 <br>
+                L = Panjang 75cm x Lebar 58cm x Sleeve 23 <br>
+                XL = Panjang 76cm x Lebar 60cm x Sleeve 25
+            </p>
+            <p>
+                MATERIAL: <br>
+                ** Bahan Cotton <br>
+                ** Kualitas jahitan terbaik <br>
+                ** Pengiriman cepat <br>
+                ** Printed TAG
+            </p>
+            <p class="price">Harga: Rp 1.000.000</p>
+        </div>
+        <form action="proses_pembelian.php" method="POST">
+            <label for="name">Nama Lengkap:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="address">Alamat Pengiriman:</label>
+            <textarea id="address" name="address" required></textarea>
+
+            <label for="color">Pilihan Warna:</label>
+            <select id="color" name="color" required>
+                <option value="merah">Merah</option>
+                <option value="hitam">Hitam</option>
+                <option value="putih">Putih</option>
+            </select>
+
+            <label for="payment">Metode Pembayaran:</label>
+            <select id="payment" name="payment" required>
+                <option value="qris">Qris</option>
+                <option value="cash">Cash</option>
+            </select>
+
+            <button type="submit">Beli Sekarang</button>
+        </form>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section about">
+                <h2>Online Shop</h2>
+                <p>Kami adalah toko online yang menyediakan berbagai produk berkualitas tinggi dengan harga terjangkau. Komitmen kami adalah memberikan pelayanan terbaik untuk kepuasan pelanggan.</p>
+            </div>
+            <div class="footer-section links">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Product</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="team.html">Team</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h2>Contact Us</h2>
+                <ul>
+                    <li><span>Email:</span> info@tokoonline.com</li>
+                    <li><span>Phone:</span> +62 123 456 789</li>
+                    <li><span>Address:</span> Jl. Merdeka No. 123, Jakarta, Indonesia</li>
+                </ul>
+            </div>
+            <div class="footer-section social">
+                <h2>Follow Us</h2>
+                <ul>
+                    <li><a href="#"><img src="path/to/facebook-icon.png" alt="Facebook"></a></li>
+                    <li><a href="#"><img src="path/to/twitter-icon.png" alt="Twitter"></a></li>
+                    <li><a href="#"><img src="path/to/instagram-icon.png" alt="Instagram"></a></li>
+                    <li><a href="#"><img src="path/to/linkedin-icon.png" alt="LinkedIn"></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
